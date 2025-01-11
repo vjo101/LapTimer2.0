@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/vjo/LapTimer2.0/build/CMakeFiles/bootloader
+/home/vjo/LapTimer2.0/build/CMakeFiles/bootloader.rule
+/home/vjo/LapTimer2.0/build/CMakeFiles/bootloader-complete.rule
+/home/vjo/LapTimer2.0/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/vjo/LapTimer2.0/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/vjo/LapTimer2.0/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/vjo/LapTimer2.0/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/vjo/LapTimer2.0/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/vjo/LapTimer2.0/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/vjo/LapTimer2.0/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
