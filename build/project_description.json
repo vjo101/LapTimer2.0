@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "LapTimer2.0",
-    "project_version":    "1",
+    "project_version":    "d870f2b-dirty",
     "project_path":       "/home/vjo/LapTimer2.0",
     "idf_path":           "/home/vjo/esp/esp-idf",
     "build_dir":          "/home/vjo/LapTimer2.0/build",
@@ -1210,7 +1210,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__led_strip" ],
             "file": "/home/vjo/LapTimer2.0/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/vjo/LapTimer2.0/main/blink_example_main.c" ],
+            "sources": [ "/home/vjo/LapTimer2.0/main/main.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
