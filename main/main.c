@@ -7,6 +7,7 @@
  #include <stdio.h>
  #include <inttypes.h>
  #include <string.h>
+ #include <stdlib.h>
  #include "sdkconfig.h"
  #include "freertos/FreeRTOS.h"
  #include "freertos/task.h"
@@ -143,9 +144,14 @@
    
    esp_http_client_handle_t client = esp_http_client_init(&config_post);
  
-   esp_http_client_set_post_field(client, (char *)postData, strlen((char *)postData));
-   esp_http_client_set_header(client, "Content-Type", "application/json");
+
+   // create the JSON data
+   char jsonBuffer[128];
+   sprintf(jsonBuffer, "{\n\t\"type\": \"Lap Time\",\n\t\"data\": {\n\t\t\"lap_duration\": %s\n\t}\n}", (char *) postData);
  
+   esp_http_client_set_post_field(client, jsonBuffer, strlen(jsonBuffer));
+   esp_http_client_set_header(client, "Content-Type", "application/json");
+
    esp_err_t err = esp_http_client_perform(client);
    if (err == ESP_OK) {
        ESP_LOGI(TAG, "HTTP POST Status = %d", esp_http_client_get_status_code(client));
